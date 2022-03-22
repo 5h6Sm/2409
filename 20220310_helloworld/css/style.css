@@ -1,0 +1,15 @@
+/* 우선순위 :TAG < class <<< !important --> */
+/* 우선순위 : 같은 급일 때는 위 < 아래 쓴 코드*/
+li {
+    color : teal;
+    background-color : azure;
+}
+.kor {
+    color:brown !important;
+}
+.eng {
+    color :lightseagreen;
+}
+#leader{
+    color :cornflowerblue;
+}
