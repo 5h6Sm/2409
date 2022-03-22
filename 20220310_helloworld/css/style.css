@@ -13,3 +13,12 @@ li {
 #leader{
     color :cornflowerblue;
 }
+li:nth-child(3){ /* 1부터 시작 */
+    text-decoration-line: underline;
+}
+h2+h3{/* h2 형제 중 첫번째 h3*/
+    background-color: rgb(97, 98, 182);
+}
+h2~h3{ /*h2 형제 중 여러 h3*/
+    font-size: 40px;
+}
