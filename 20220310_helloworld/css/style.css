@@ -2,25 +2,33 @@
 /* 우선순위 :TAG < class <<< !important --> */
 /* 우선순위 : 같은 급일 때는 위 < 아래 쓴 코드*/
 body > li {
-    color : teal;
-    background-color : azure;
+  color: teal;
+  background-color: azure;
 }
 .kor {
-    color:brown !important;
+  color: brown !important;
 }
-.eng , h6{
-    /*콤마 : 함께*/
-    color :lightseagreen;
+.eng,
+h6 {
+  /*콤마 : 함께*/
+  color: lightseagreen;
 }
-#leader{
-    color :cornflowerblue;
+#leader {
+  color: cornflowerblue;
 }
-li:nth-child(3){ /* 1부터 시작 */
-    text-decoration-line: underline;
+li:nth-child(3) {
+  /* 1부터 시작 */
+  text-decoration-line: underline;
 }
-h2+h3{/* h2 형제 중 첫번째 h3*/
-    background-color: rgb(97, 98, 182);
+h2 + h3 {
+  /* h2 형제 중 첫번째 h3*/
+  background-color: rgb(97, 98, 182);
 }
-h2~h3{ /*h2 형제 중 여러 h3*/
-    font-size: 40px;
+h2 ~ h3 {
+  /*h2 형제 중 여러 h3*/
+  font-size: 40px;
+}
+ul > ul:nth-child(2) {
+  /* 찾는 요소 우클릭 > 검사 > 개발자 도구 > 우클릭 > copy > copy selector */
+  background: pink;
 }
