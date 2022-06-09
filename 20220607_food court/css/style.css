@@ -113,7 +113,7 @@ nav i{
     }
     .nav-link{
         color : var(--title-color);
-
+        display: block; /* 링크의 너비 : 컨텐츠 -> nav-item 만큼 늘리자(width:100%해도됨) */
     }
     .nav-item{
         padding: .5rem 1rem; /* 위 오 아 왼 */
