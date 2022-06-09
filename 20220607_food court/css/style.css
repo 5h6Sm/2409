@@ -94,5 +94,33 @@ nav i{
 /* 2K & 4K */
 
 /* table */
+@media screen and (max-width : 600px){
+    .nav-toggle{
+        display: block;
+        cursor:pointer;
+        position:absolute; /* 위치 무시, 로고 가운데 정렬 */
+    }
+    .nav-logo{
+        margin: 0 auto; /* 로고 가운데 정렬 */
+    }
+    .nav-list{
+        position:absolute;
+        top:44px;
+        left:0;
+        right:0;
+        flex-direction: column;
+        background-color: lightgrey;
+    }
+    .nav-link{
+        color : var(--title-color);
+
+    }
+    .nav-item{
+        padding: .5rem 1rem; /* 위 오 아 왼 */
+        text-align:center; /* 가운데 정렬 */
+        border-bottom: 2px solid white; /* 아래 선 2px 하얀색 */
+    }
+
+}
 
 /* mobile */
