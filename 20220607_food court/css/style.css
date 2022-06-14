@@ -81,7 +81,7 @@ nav i{
     font-size: var(--h3-font-size); /* 아이콘 좀 크게 */
 }
 .nav-toggle{
-    display: none; /* 안 보이게 하기*/
+    display: none; /* 안 보이게 하기*/ /* 시험 출제 */
 }
 .nav-list{
     display: flex;  /* 기본값 : 수평 방향*/
@@ -94,7 +94,7 @@ nav i{
 /* 2K & 4K */
 
 /* table */
-@media screen and (max-width : 600px){
+@media screen and (max-width : 600px){ /* 시험 출제 */
     .nav-toggle{
         display: block;
         cursor:pointer;
@@ -110,6 +110,9 @@ nav i{
         right:0;
         flex-direction: column;
         background-color: lightgrey;
+        height: 0;
+        overflow: hidden;
+        transition: 0.2s;
     }
     .nav-link{
         color : var(--title-color);
@@ -119,6 +122,10 @@ nav i{
         padding: .5rem 1rem; /* 위 오 아 왼 */
         text-align:center; /* 가운데 정렬 */
         border-bottom: 2px solid white; /* 아래 선 2px 하얀색 */
+    }
+    .show-menu{
+        height: 164px;
+
     }
 
 }
